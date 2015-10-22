@@ -1,0 +1,327 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="Keywords" content="blog"/>
+    <meta name="Description" content="blog"/>
+    <title>Simple</title>
+    <link rel="shortcut icon" href="/static/favicon.png"/>
+    <link rel="stylesheet" type="text/css" href="/main.css" />
+</head>
+<body>
+<div class="main">
+    <div class="header">
+    	<ul id="pages">
+            <li><a href="/">home</a></li>
+            <li><a href="/#/tags">tags</a></li>
+            <li><a href="/#/archive">archive</a></li>
+    	</ul>
+    </div>
+	<div class="wrap-header">
+	<h1>
+    <a href="/" id="title"></a>
+	</h1>
+	</div>
+<div id="md" style="display: none;">
+<!-- markdown -->
+`print'Hello world!'`
+
+Thanks to isnowfy's Simple[](), i managed to make my first GitHub Pages blog.
+
+Now it's time for me to focus on developing the content!
+
+Yet, a little more before that, i need to have a recap on the syntax of Markdown.  the following brief introduction is cited from 
+***
+##**Markdown Syntax:**
+
+1.Phrase Emphasis 斜体与加粗  
+`*italic*`or`*_italic_`or`**bold*`or`__bold__`  
+ _italic_ **bold** 
+
+2.Links 超链接  
+_方法1_ Inline:  `An [example](http://url.com/ "Title")`  
+An [example](http://url.com/ "Title")  
+_方法2_ Reference-style labels (titles are optional):`An [example][id]`  
+An [example][id]  
+Then, anywhere else in the doc, define the link:`[id]: http://example.com/  "Title"`  
+[id]: http://example.com/  "Title"  
+
+3.Images 插入图片
+_方法1_ Inline (titles are optional):
+`![alt text](/path/img.jpg "Title")`  
+_方法2_ Reference-style:  
+`![alt text][id]`  
+`[id]: /url/to/img.jpg "Title"`  
+
+4.Headers 标题  
+_方法1_ Setext-style:  
+`Header 1   
+ ========`
+Header 1
+========  
+
+
+Header 2
+--------
+
+_方法2_ atx-style (closing #'s are optional):
+# Header 1 #
+
+## Header 2 ##
+
+###### Header 6
+
+5.Lists 列表
+
+有序列表 Ordered, without paragraphs:
+1.  Foo
+2.  Bar
+
+无序列表 Unordered, with paragraphs:
+*   A list item.
+
+    With multiple paragraphs.
+
+*   Bar
+
+You can nest them:
+*   Abacus
+    * answer
+*   Bubbles
+    1.  bunk
+    2.  bupkis
+        * BELITTLER
+    3. burper
+*   Cunning
+
+6.Blockquotes 块引用
+
+> Email-style angle brackets
+> are used for blockquotes.
+
+> > And, they can be nested.
+
+> #### Headers in blockquotes
+> 
+> * You can quote a list.
+> * Etc.
+
+7.Code Spans 代码段
+
+`<code>` spans are delimited by backticks.
+
+You can include literal backticks
+like ```this```.
+
+Pre-formatted Code Blocks
+ 
+Indent every line of a code block by at least 4 spaces or 1 tab.
+This is a normal paragraph.
+
+    This is a preformatted
+    code block.
+
+8.Horizontal Rules 水平分割线  
+Three or more dashes or asterisks:  
+```---```or`***`or`- - - -`, they display the same effect. 
+- - - 
+
+9.Manual Line Breaks 换行  
+End a line with two or more spaces:  
+>Roses are red,   
+Violets are blue.
+<!-- markdown end -->
+</div>
+<div class="entry" id="main">
+<!-- content -->
+<p><code>print'Hello world!'</code></p>
+
+<p>Thanks to isnowfy's Simple<a href=""></a>, i managed to make my first GitHub Pages blog.</p>
+
+<p>Now it's time for me to focus on developing the content!</p>
+
+<p>Yet, a little more before that, i need to have a recap on the syntax of Markdown.  the following brief introduction is cited from </p>
+
+<hr>
+
+<h2 id="markdownsyntax"><strong>Markdown Syntax:</strong></h2>
+
+<p>1.Phrase Emphasis 斜体与加粗 <br>
+<code>*italic*</code>or<code>*_italic_</code>or<code>**bold*</code>or<code>__bold__</code> <br>
+ <em>italic</em> <strong>bold</strong> </p>
+
+<p>2.Links 超链接 <br>
+<em>方法1</em> Inline:  <code>An [example](http://url.com/ "Title")</code> <br>
+An <a href="http://url.com/" title="Title">example</a> <br>
+<em>方法2</em> Reference-style labels (titles are optional):<code>An [example][id]</code> <br>
+An <a href="http://example.com/" title="Title">example</a> <br>
+Then, anywhere else in the doc, define the link:<code>[id]: http://example.com/  "Title"</code> <br>
+3.Images 插入图片
+<em>方法1</em> Inline (titles are optional):
+<code>![alt text](/path/img.jpg "Title")</code> <br>
+<em>方法2</em> Reference-style: <br>
+<code>![alt text][id]</code> <br>
+<code>[id]: /url/to/img.jpg "Title"</code>  </p>
+
+<p>4.Headers 标题 <br>
+<em>方法1</em> Setext-style: <br>
+<code>Header 1 <br>
+ ========</code></p>
+
+<h1 id="header1">Header 1</h1>
+
+<h2 id="header2">Header 2</h2>
+
+<p><em>方法2</em> atx-style (closing #'s are optional):</p>
+
+<h1 id="header1">Header 1</h1>
+
+<h2 id="header2">Header 2</h2>
+
+<h6 id="header6">Header 6</h6>
+
+<p>5.Lists 列表</p>
+
+<p>有序列表 Ordered, without paragraphs:
+1.  Foo
+2.  Bar</p>
+
+<p>无序列表 Unordered, with paragraphs:
+*   A list item.</p>
+
+<pre><code>With multiple paragraphs.
+</code></pre>
+
+<ul>
+<li>Bar</li>
+</ul>
+
+<p>You can nest them:
+*   Abacus
+    * answer
+*   Bubbles
+    1.  bunk
+    2.  bupkis
+        * BELITTLER
+    3. burper
+*   Cunning</p>
+
+<p>6.Blockquotes 块引用</p>
+
+<blockquote>
+  <p>Email-style angle brackets
+  are used for blockquotes.</p>
+  
+  <blockquote>
+    <p>And, they can be nested.</p>
+  </blockquote>
+  
+  <h4 id="headersinblockquotes">Headers in blockquotes</h4>
+  
+  <ul>
+  <li>You can quote a list.</li>
+  <li>Etc.</li>
+  </ul>
+</blockquote>
+
+<p>7.Code Spans 代码段</p>
+
+<p><code>&lt;code&gt;</code> spans are delimited by backticks.</p>
+
+<p>You can include literal backticks
+like <code>this</code>.</p>
+
+<p>Pre-formatted Code Blocks</p>
+
+<p>Indent every line of a code block by at least 4 spaces or 1 tab.
+This is a normal paragraph.</p>
+
+<pre><code>This is a preformatted
+code block.
+</code></pre>
+
+<p>8.Horizontal Rules 水平分割线 <br>
+Three or more dashes or asterisks: <br>
+<code>---</code>or<code>***</code>or<code>- - - -</code>, they display the same effect. </p>
+
+<hr>
+
+<p>9.Manual Line Breaks 换行 <br>
+End a line with two or more spaces:  </p>
+
+<blockquote>
+  <p>Roses are red, <br>
+  Violets are blue.</p>
+</blockquote>
+<!-- content end -->
+</div>
+<br>
+<br>
+    <div id="disqus_thread"></div>
+	<div class="footer">
+		<p>© Copyright 2014 by isnowfy, Designed by isnowfy</p>
+	</div>
+</div>
+<script src="main.js"></script>
+<script id="content" type="text/mustache">
+    <h1>{{title}}</h1>
+    <div class="tag">
+    {{date}}
+    {{#tags}}
+    <a href="/#/tag/{{name}}">#{{name}}</a>
+    {{/tags}}
+    </div>
+</script>
+<script id="pagesTemplate" type="text/mustache">
+    {{#pages}}
+    <li>
+        <a href="{{path}}">{{title}}</a>
+    </li>
+    {{/pages}}
+</script>
+<script>
+$(document).ready(function() {
+    $.ajax({
+        url: "main.json",
+        type: "GET",
+        dataType: "json",
+        success: function(data) {
+            $("#title").html(data.name);
+            var pagesTemplate = Hogan.compile($("#pagesTemplate").html());
+            var pagesHtml = pagesTemplate.render({"pages": data.pages});
+            $("#pages").append(pagesHtml);
+            //path
+            var path = "hello-world.html";
+            //path end
+            var now = 0;
+            for (var i = 0; i < data.posts.length; ++i)
+                if (path == data.posts[i].path)
+                    now = i;
+            var post = data.posts[now];
+            var tmp = post.tags.split(" ");
+            var tags = [];
+            for (var i = 0; i < tmp.length; ++i)
+                if (tmp[i].length > 0)
+                    tags.push({"name": tmp[i]});
+            var contentTemplate = Hogan.compile($("#content").html());
+            var contentHtml = contentTemplate.render({"title": post.title, "tags": tags, "date": post.date});
+            $("#main").prepend(contentHtml);
+            if (data.disqus_shortname.length > 0) {
+                var disqus_shortname = data.disqus_shortname;
+                (function() {
+                    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+                    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+                })();
+            }
+        }
+    });
+});
+</script>
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ["\\(", "\\)"]], processEscapes: true}});
+</script>
+</body>
+</html>
