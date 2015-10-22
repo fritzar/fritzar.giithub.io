@@ -1,1 +1,1 @@
-{"name":"fritzar","number_of_posts_per_page":7,"disqus_shortname":"","posts":[],"pages":[{"title":"About This Blog","date":"2015-10-22","tags":"about","path":"about.html"}]}
+{"name":"fritzar","number_of_posts_per_page":7,"disqus_shortname":"","posts":[{"title":"Hello World!","date":"2015-10-22","tags":"blog","path":"hello-world.html"}],"pages":[{"title":"About This Blog","date":"2015-10-22","tags":"about","path":"about.html","num":0,"type":"page","active":false}]}
