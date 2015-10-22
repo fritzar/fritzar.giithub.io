@@ -1,0 +1,361 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="Keywords" content="blog"/>
+    <meta name="Description" content="blog"/>
+    <title>Simple</title>
+    <link rel="shortcut icon" href="/static/favicon.png"/>
+    <link rel="stylesheet" type="text/css" href="/main.css" />
+</head>
+<body>
+<div class="main">
+    <div class="header">
+    	<ul id="pages">
+            <li><a href="/">home</a></li>
+            <li><a href="/#/tags">tags</a></li>
+            <li><a href="/#/archive">archive</a></li>
+    	</ul>
+    </div>
+	<div class="wrap-header">
+	<h1>
+    <a href="/" id="title"></a>
+	</h1>
+	</div>
+<div id="md" style="display: none;">
+<!-- markdown -->
+#利用静态页面创建博客
+`print'Hello world!'`
+
+Thanks to isnowfy's [Simple](http://isnowfy.github.io/about-simple-cn.html#comment-2320411142), I managed to make my first GitHub Pages blog.
+
+Now it's time for me to focus on developing the content!
+
+Yet, a little more work before that, I need to have a recap on the syntax of Markdown.  The following brief introduction is cited from the Internet. 
+
+一个编辑的很好的[简明说明](http://ibruce.info/2013/11/26/markdown/) from 不如的博客
+***
+##**Markdown Syntax:**
+
+### Phrase Emphasis 斜体与加粗
+一个是斜体，两个是加粗  
+`*italic*`or`_italic_`or`**bold**`or`__bold__`  
+ _italic_ **bold** (Seems Italic doesn't work?)
+
+### Links 超链接  
+**方法1** Inline:  `An [example](http://url.com/ "Title")`  
+An [example](http://url.com/ "Title")  
+**方法2** Reference-style labels (titles are optional):`An [example][id]`  
+An [example][id]  
+Then, anywhere else in the doc, define the link:`[id]: http://example.com/  "Title"`  
+[id]: http://example.com/  "Title"  
+
+### Images 插入图片
+**方法1** Inline (titles are optional):
+`![alt text](/path/img.jpg "Title")`  
+**方法2** Reference-style:  
+`![alt text][id]`  
+`[id]: /url/to/img.jpg "Title"`  
+
+#### Headers 标题  
+**方法1** Setext-style:  
+	Header 1     
+	========  
+	Header 2  
+	--------  
+
+**方法2** atx-style (closing #'s are optional):  
+    # Header 1#  
+    ## Header 2 ##  
+    ###### Header 6
+    
+### Lists 列表
+
+####有序列表 Ordered：数字不能省略但可无序，点号之后的空格不能少。
+	1.  Foo  
+	2.  Bar
+1.  Foo  
+2.  Bar  
+####无序列表 Unordered：符号之后的空格不能少。
+-+* 效果一样，但不能混合使用，因混合是嵌套列表。  
+对于嵌套列表，-+* 可循环使用，但符号之后的空格不能少，符号之前的空格也不能少
+
+	- 嵌套列表  
+	 + 嵌套列表  
+	 + 嵌套列表  
+	  - 嵌套列表  
+	   * 嵌套列表  
+	- 嵌套列表       
+
+- 嵌套列表
+ + 嵌套列表
+ + 嵌套列表
+  - 嵌套列表
+   * 嵌套列表
+- 嵌套列表   
+
+
+###Blockquotes 块引用
+
+    > Email-style angle brackets
+    > are used for blockquotes.
+    
+    > > And, they can be nested.
+    
+    > #### Headers in blockquotes
+    > 
+    > * You can quote a list.
+    > * Etc.  
+> Email-style angle brackets
+> are used for blockquotes.
+
+> > And, they can be nested.
+
+> #### Headers in blockquotes
+> 
+> * You can quote a list.
+> * Etc.
+
+###Code Spans 代码段
+
+#####`Code` spans are delimited by backticks.
+
+You can include literal backticks
+like `this`.
+
+#####Pre-formatted Code Blocks
+ Indent every line of a code block by at least 4 spaces or 1 tab.
+This is a normal paragraph.
+
+    This is a preformatted
+    code block.
+
+###Horizontal Rules 水平分割线  
+Three or more dashes or asterisks:  
+`---`or`***`or`- - - -`, they display the same effect. 
+- - - 
+
+###Manual Line Breaks 换行  
+End a line with two or more spaces:  
+>Roses are red,   
+Violets are blue.
+<!-- markdown end -->
+</div>
+<div class="entry" id="main">
+<!-- content -->
+<h1 id="">利用静态页面创建博客</h1>
+
+<p><code>print'Hello world!'</code></p>
+
+<p>Thanks to isnowfy's <a href="http://isnowfy.github.io/about-simple-cn.html#comment-2320411142">Simple</a>, I managed to make my first GitHub Pages blog.</p>
+
+<p>Now it's time for me to focus on developing the content!</p>
+
+<p>Yet, a little more work before that, I need to have a recap on the syntax of Markdown.  The following brief introduction is cited from the Internet. </p>
+
+<p>一个编辑的很好的<a href="http://ibruce.info/2013/11/26/markdown/">简明说明</a> from 不如的博客</p>
+
+<hr>
+
+<h2 id="markdownsyntax"><strong>Markdown Syntax:</strong></h2>
+
+<h3 id="phraseemphasis">Phrase Emphasis 斜体与加粗</h3>
+
+<p>一个是斜体，两个是加粗 <br>
+<code>*italic*</code>or<code>_italic_</code>or<code>**bold**</code>or<code>__bold__</code> <br>
+ <em>italic</em> <strong>bold</strong> (Seems Italic doesn't work?)</p>
+
+<h3 id="links">Links 超链接</h3>
+
+<p><strong>方法1</strong> Inline:  <code>An [example](http://url.com/ "Title")</code> <br>
+An <a href="http://url.com/" title="Title">example</a> <br>
+<strong>方法2</strong> Reference-style labels (titles are optional):<code>An [example][id]</code> <br>
+An <a href="http://example.com/" title="Title">example</a> <br>
+Then, anywhere else in the doc, define the link:<code>[id]: http://example.com/  "Title"</code>  </p>
+
+<h3 id="images">Images 插入图片</h3>
+
+<p><strong>方法1</strong> Inline (titles are optional):
+<code>![alt text](/path/img.jpg "Title")</code> <br>
+<strong>方法2</strong> Reference-style: <br>
+<code>![alt text][id]</code> <br>
+<code>[id]: /url/to/img.jpg "Title"</code>  </p>
+
+<h4 id="headers">Headers 标题</h4>
+
+<p><strong>方法1</strong> Setext-style: <br>
+    Header 1 <br>
+    ======== <br>
+    Header 2 <br>
+    --------  </p>
+
+<p><strong>方法2</strong> atx-style (closing #'s are optional): <br>
+    # Header 1# <br>
+    ## Header 2 ## <br>
+    ###### Header 6</p>
+
+<h3 id="lists">Lists 列表</h3>
+
+<h4 id="ordered">有序列表 Ordered：数字不能省略但可无序，点号之后的空格不能少。</h4>
+
+<pre><code>1.  Foo  
+2.  Bar
+</code></pre>
+
+<p>1.  Foo <br>
+2.  Bar  </p>
+
+<h4 id="unordered">无序列表 Unordered：符号之后的空格不能少。</h4>
+
+<p>-+* 效果一样，但不能混合使用，因混合是嵌套列表。 <br>
+对于嵌套列表，-+* 可循环使用，但符号之后的空格不能少，符号之前的空格也不能少</p>
+
+<pre><code>- 嵌套列表  
+ + 嵌套列表  
+ + 嵌套列表  
+  - 嵌套列表  
+   * 嵌套列表  
+- 嵌套列表       
+</code></pre>
+
+<ul>
+<li>嵌套列表
+<ul><li>嵌套列表</li>
+<li>嵌套列表</li>
+<li>嵌套列表</li>
+<li>嵌套列表</li></ul></li>
+<li>嵌套列表   </li>
+</ul>
+
+<h3 id="blockquotes">Blockquotes 块引用</h3>
+
+<pre><code>&gt; Email-style angle brackets
+&gt; are used for blockquotes.
+
+&gt; &gt; And, they can be nested.
+
+&gt; #### Headers in blockquotes
+&gt; 
+&gt; * You can quote a list.
+&gt; * Etc.  
+</code></pre>
+
+<blockquote>
+  <p>Email-style angle brackets
+  are used for blockquotes.</p>
+  
+  <blockquote>
+    <p>And, they can be nested.</p>
+  </blockquote>
+  
+  <h4 id="headersinblockquotes">Headers in blockquotes</h4>
+  
+  <ul>
+  <li>You can quote a list.</li>
+  <li>Etc.</li>
+  </ul>
+</blockquote>
+
+<h3 id="codespans">Code Spans 代码段</h3>
+
+<h5 id="codespansaredelimitedbybackticks"><code>Code</code> spans are delimited by backticks.</h5>
+
+<p>You can include literal backticks
+like <code>this</code>.</p>
+
+<h5 id="preformattedcodeblocks">Pre-formatted Code Blocks</h5>
+
+<p>Indent every line of a code block by at least 4 spaces or 1 tab.
+This is a normal paragraph.</p>
+
+<pre><code>This is a preformatted
+code block.
+</code></pre>
+
+<h3 id="horizontalrules">Horizontal Rules 水平分割线</h3>
+
+<p>Three or more dashes or asterisks: <br>
+<code>---</code>or<code>***</code>or<code>- - - -</code>, they display the same effect. </p>
+
+<hr>
+
+<h3 id="manuallinebreaks">Manual Line Breaks 换行</h3>
+
+<p>End a line with two or more spaces:  </p>
+
+<blockquote>
+  <p>Roses are red, <br>
+  Violets are blue.</p>
+</blockquote>
+<!-- content end -->
+</div>
+<br>
+<br>
+    <div id="disqus_thread"></div>
+	<div class="footer">
+		<p>© Copyright 2014 by isnowfy, Designed by isnowfy</p>
+	</div>
+</div>
+<script src="main.js"></script>
+<script id="content" type="text/mustache">
+    <h1>{{title}}</h1>
+    <div class="tag">
+    {{date}}
+    {{#tags}}
+    <a href="/#/tag/{{name}}">#{{name}}</a>
+    {{/tags}}
+    </div>
+</script>
+<script id="pagesTemplate" type="text/mustache">
+    {{#pages}}
+    <li>
+        <a href="{{path}}">{{title}}</a>
+    </li>
+    {{/pages}}
+</script>
+<script>
+$(document).ready(function() {
+    $.ajax({
+        url: "main.json",
+        type: "GET",
+        dataType: "json",
+        success: function(data) {
+            $("#title").html(data.name);
+            var pagesTemplate = Hogan.compile($("#pagesTemplate").html());
+            var pagesHtml = pagesTemplate.render({"pages": data.pages});
+            $("#pages").append(pagesHtml);
+            //path
+            var path = "hello-world-markdown-syntax.html";
+            //path end
+            var now = 0;
+            for (var i = 0; i < data.posts.length; ++i)
+                if (path == data.posts[i].path)
+                    now = i;
+            var post = data.posts[now];
+            var tmp = post.tags.split(" ");
+            var tags = [];
+            for (var i = 0; i < tmp.length; ++i)
+                if (tmp[i].length > 0)
+                    tags.push({"name": tmp[i]});
+            var contentTemplate = Hogan.compile($("#content").html());
+            var contentHtml = contentTemplate.render({"title": post.title, "tags": tags, "date": post.date});
+            $("#main").prepend(contentHtml);
+            if (data.disqus_shortname.length > 0) {
+                var disqus_shortname = data.disqus_shortname;
+                (function() {
+                    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+                    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+                })();
+            }
+        }
+    });
+});
+</script>
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ["\\(", "\\)"]], processEscapes: true}});
+</script>
+</body>
+</html>
